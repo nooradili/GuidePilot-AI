@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>شهادة إمكانية الوصول من GuidePilot - Terminal A Testing</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Cairo:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0B0E14;
+            color: #E5E7EB;
+            padding: 40px;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #111622;
+            border: 2px solid #2A354A;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #2A354A;
+            padding-bottom: 24px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #00F0FF;
+            font-size: 28px;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+        .subtitle {
+            color: #9CA3AF;
+            font-size: 14px;
+            margin: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: #182030;
+            border: 1px solid #2A354A;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        .score-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        .score-text {
+            position: absolute;
+            font-size: 32px;
+            font-weight: bold;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .score-text span {
+            font-size: 12px;
+            color: #9CA3AF;
+        }
+        .badge {
+            display: inline-block;
+            background: #FFB80022;
+            color: #FFB800;
+            border: 1px solid #FFB800;
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        h3 {
+            color: #00F0FF;
+            border-bottom: 1px solid #2A354A;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .bar-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .bar-label {
+            width: 120px;
+            font-size: 12px;
+            color: #9CA3AF;
+        }
+        .bar-track {
+            flex: 1;
+            background: #0B0E14;
+            height: 12px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .bar-fill {
+            height: 100%;
+            border-radius: 6px;
+        }
+        .bar-val {
+            font-size: 12px;
+            font-weight: bold;
+            width: 40px;
+            text-align: right;
+        }
+        .report-section {
+            margin-top: 40px;
+            border-top: 2px solid #2A354A;
+            padding-top: 30px;
+        }
+        .rec-item {
+            background: #0B0E14;
+            border-left: 4px solid #FFB800;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        dir[dir="rtl"] .rec-item {
+            border-left: none;
+            border-right: 4px solid #FFB800;
+        }
+        @media print {
+            body {
+                background: #FFFFFF;
+                color: #000000;
+                padding: 10px;
+            }
+            .container {
+                border: none;
+                box-shadow: none;
+                background: #FFFFFF;
+                padding: 0;
+            }
+            .card, .rec-item {
+                background: #FFFFFF;
+                border: 1px solid #CCCCCC;
+                color: #000000;
+            }
+            h1, h3 {
+                color: #000000;
+            }
+            .score-text {
+                color: #000000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>شهادة إمكانية الوصول من GuidePilot</h1>
+            <div class="subtitle">تقرير تدقيق شامل ومحاكاة التوأم الرقمي للأثر المجتمعي</div>
+        </header>
+
+        <div class="grid">
+            <!-- Accessibility Score details card -->
+            <div class="card">
+                <h3>درجة إمكانية الوصول</h3>
+                
+                <div class="score-circle">
+                    <svg width="120" height="120" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" fill="transparent" stroke="#1F2937" stroke-width="8"/>
+                        <circle cx="50" cy="50" r="40" fill="transparent" stroke="#FFB800" stroke-width="8"
+                                stroke-dasharray="251.2" stroke-dashoffset="53.19999999999999"
+                                stroke-linecap="round" transform="rotate(-90 50 50)"/>
+                    </svg>
+                    <div class="score-text">
+                        79
+                        <span>/ 100</span>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 15px;">
+                    <div class="badge">الدرجة C</div>
+                    <div style="margin-top: 8px; font-weight: 600; font-size: 15px; color: #9CA3AF;">
+                        حالة الاعتماد: <span style="color: #FFB800">ميسر مشروط</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metadata and breakdown card -->
+            <div class="card">
+                <h3>تحليل وتوزيع الدرجات</h3>
+                <p style="font-size: 13px; margin: 0 0 15px 0;"><strong>اسم المنشأة:</strong> Terminal A Testing<br/>
+                <strong>العنوان:</strong> Airport Avenue 44<br/>
+                <strong>تاريخ التدقيق:</strong> June 12, 2026</p>
+                
+                <div class="bar-chart">
+                    <div class="bar-row">
+                        <span class="bar-label">المنشآت المكتشفة</span>
+                        <div class="bar-track"><div class="bar-fill" style="width: 48%; background: #10B981;"></div></div>
+                        <span class="bar-val" style="color: #10B981;">+16</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="bar-label">العوائق المكتشفة</span>
+                        <div class="bar-track"><div class="bar-fill" style="width: 36%; background: #EF4444;"></div></div>
+                        <span class="bar-val" style="color: #EF4444;">-12</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="bar-label">نسبة الثقة بالتقييم</span>
+                        <div class="bar-track"><div class="bar-fill" style="width: 94%; background: #00F0FF;"></div></div>
+                        <span class="bar-val" style="color: #00F0FF;">94%</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; font-size: 13px; background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px dashed #2A354A;">
+                    <strong>مسار تحليل الذكاء الاصطناعي:</strong>
+                    <p style="margin: 4px 0 0 0; color: #9CA3AF;">تم تقييم المخطط الأساسي للمبنى (+75). تم العثور على 2 من المرافق الميسرة المضافة (+16). تم خصم 12 نقطة بسبب وجود 1 من العوائق المادية في المنشأة.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Risk Reports -->
+        <div class="report-section">
+            <h3>١. تقرير المخاطر والأمن والسلامة</h3>
+            <p style="font-size: 14px; color: #9CA3AF; margin-bottom: 20px;">
+                يقوم هذا القسم بتحليل المخاطر المباشرة وعوائق الوصول التي قد تهدد سلامة الأشخاص ذوي الإعاقة الحركية أو البصرية.
+            </p>
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #2A354A; color: #00F0FF;">
+                        <th style="padding: 10px; text-align: inherit;">العائق</th>
+                        <th style="padding: 10px; text-align: inherit;">حجم المخاطر</th>
+                        <th style="padding: 10px; text-align: inherit;">الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #1F2937;"><td style="padding: 12px;"><strong>Staircase</strong></td><td style="padding: 12px;"><span style="color: #EF4444; font-weight: bold;">مرتفع جداً</span></td><td style="padding: 12px;">يتطلب تدخل فوري وإضافة منحدر أو إشارات إرشادية</td></tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Section 3: Digital Twin Report -->
+        <div class="report-section">
+            <h3>٢. محاكاة التوأم الرقمي للوصول</h3>
+            <p style="font-size: 14px; color: #9CA3AF; margin-bottom: 15px;">
+                تقوم المحاكاة بفحص المبنى رقمياً ومقارنة معايير الوصول لمختلف الملفات التعريفية للتنقل:
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+                <div class="card" style="padding: 16px; text-align: center;">
+                    <span style="font-size: 14px; font-weight: bold; color: #FFFFFF;">مستخدم كرسي متحرك</span>
+                    <div style="font-size: 24px; font-weight: bold; margin: 10px 0; color: #EF4444;">45%</div>
+                    <span style="font-size: 11px; color: #9CA3AF;">Stairs impede wheelchair mobility.</span>
+                </div>
+                <div class="card" style="padding: 16px; text-align: center;">
+                    <span style="font-size: 14px; font-weight: bold; color: #FFFFFF;">مستخد البصر (كفيف)</span>
+                    <div style="font-size: 24px; font-weight: bold; margin: 10px 0; color: #FFB800;">80%</div>
+                    <span style="font-size: 11px; color: #9CA3AF;">يتطلب توفير مسارات حسية ملموسة</span>
+                </div>
+                <div class="card" style="padding: 16px; text-align: center;">
+                    <span style="font-size: 14px; font-weight: bold; color: #FFFFFF;">كبار السن والمسنين</span>
+                    <div style="font-size: 24px; font-weight: bold; margin: 10px 0; color: #10B981;">70%</div>
+                    <span style="font-size: 11px; color: #9CA3AF;">يحتاج إلى درابزين حماية إضافي</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Community Impact Report -->
+        <div class="report-section">
+            <h3>٣. تقرير الأثر المجتمعي والاقتصادي</h3>
+            <div class="grid" style="margin-top: 15px;">
+                <div class="card" style="background: rgba(16,185,129,0.05); border-color: rgba(16,185,129,0.2);">
+                    <h4 style="margin: 0 0 10px 0; color: #10B981;">إمكانية زيادة الدمج والشمولية</h4>
+                    <p style="font-size: 13px; margin: 0; color: #9CA3AF;">
+                        عند تطبيق التوصيات المذكورة أدناه، فإن مؤشر التنقل المستقل للأفراد يرتفع بنسبة +18%، مما يتيح للأشخاص ذوي الإعاقة زيارة المنشأة بخصوصية وأمان تامين.
+                    </p>
+                </div>
+                <div class="card" style="background: rgba(0,240,255,0.05); border-color: rgba(0,240,255,0.2);">
+                    <h4 style="margin: 0 0 10px 0; color: #00F0FF;">زيادة القيمة الاقتصادية للمنشأة</h4>
+                    <p style="font-size: 13px; margin: 0; color: #9CA3AF;">
+                        ترقية مرافق الوصول ترفع من التقييم العام للمبنى وتوسع قاعدة العملاء والزوار بنسبة متوقعة تصل إلى +15% طبقاً لمعايير التصميم الشامل.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prioritized AI Recommendations -->
+        <div class="report-section">
+            <h3>٤. خطة عمل التوصيات ذات الأولوية</h3>
+            
+        </div>
+    </div>
+    <script>window.print();</script>
+</body>
+</html>

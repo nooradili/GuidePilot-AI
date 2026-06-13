@@ -1,0 +1,13 @@
+﻿venv/
+.venv/
+
+frontend/node_modules/
+frontend/.next/
+
+__pycache__/
+*.pyc
+
+*.db
+data/chromadb/
+
+*.log
